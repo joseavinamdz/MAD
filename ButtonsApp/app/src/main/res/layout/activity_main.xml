@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/switch_on_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:onClick="switchListener"
+        android:showText="true"
+        android:text="@string/switch_label"
+        android:textOff="@string/switch_off_label"
+        android:textOn="@string/switch_on_label"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/checkbox_good_label"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/checkbox_regular_label"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_bad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/checkbox_bad_label"
+        android:textSize="14sp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton_on_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:checked="true"
+        android:text="@string/togglebutton_onoff_label"
+        android:textOff="@string/toggle_activate_label"
+        android:textOn="@string/toggle_deactivate_label"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/name_label"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        android:autofillHints="@string/name_label"/>
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/email_label"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        android:autofillHints="@string/email_label"/>
+
+    <Button
+        android:id="@+id/button_open_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/button_label"
+        android:textSize="14sp"/>
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:textSize="14sp">
+
+        <RadioButton
+            android:id="@+id/radioButton_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_large_label"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_medium_label"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_small_label"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+
+</LinearLayout>
