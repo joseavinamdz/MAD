@@ -121,8 +121,44 @@ which can be written as
 =\left(1+e^{-x}\right)^{-2} \cdot e^{-x}=\frac{e^{-x}}{\left(1+e^{-x}\right)^{2}}
 " />
 
-Right, we are complete with the derivative.
+Right, we are complete with the derivative. Now, we still need to simplify it a bit to get to the form used in Machine Learning. 
 
+
+First, let’s rewrite it as follows
+
+<img src="https://tex.s2cms.ru/svg/%5CLarge%7B%0A%3D%5Cfrac%7Be%5E%7B-x%7D%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%5E%7B2%7D%7D%3D%5Cfrac%7B1%20.%20e%5E%7B-x%7D%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%20%5Ccdot%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%7D%0A" alt="\Large{
+=\frac{e^{-x}}{\left(1+e^{-x}\right)^{2}}=\frac{1 . e^{-x}}{\left(1+e^{-x}\right) \cdot\left(1+e^{-x}\right)}}
+" />
+
+And then rewrite it as
+
+<img src="https://tex.s2cms.ru/svg/%0A%3D%5Cfrac%7B1%20.%20e%5E%7B-x%7D%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%20%5Ccdot%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%3D%5Cfrac%7B1%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%20%5Ccdot%20%5Cfrac%7Be%5E%7B-x%7D%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%0A" alt="
+=\frac{1 . e^{-x}}{\left(1+e^{-x}\right) \cdot\left(1+e^{-x}\right)}=\frac{1}{\left(1+e^{-x}\right)} \cdot \frac{e^{-x}}{\left(1+e^{-x}\right)}
+" />
+
+And since $+1 — 1 = 0$ we can do this
+
+<img src="https://tex.s2cms.ru/svg/%0A%3D%5Cfrac%7B1%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%20%5Ccdot%20%5Cfrac%7Be%5E%7B-x%7D%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%3D%5Cfrac%7B1%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%20%5Ccdot%20%5Cfrac%7Be%5E%7B-x%7D%2B1-1%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%0A" alt="
+=\frac{1}{\left(1+e^{-x}\right)} \cdot \frac{e^{-x}}{\left(1+e^{-x}\right)}=\frac{1}{\left(1+e^{-x}\right)} \cdot \frac{e^{-x}+1-1}{\left(1+e^{-x}\right)}
+" />
+
+And now let’s break the fraction and rewrite it as
+
+<img src="https://tex.s2cms.ru/svg/%0A%3D%5Cfrac%7B1%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%20%5Ccdot%20%5Cfrac%7Be%5E%7B-x%7D%2B1-1%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%3D%5Cfrac%7B1%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%20%5Ccdot%5Cleft(%5Cfrac%7B1%2Be%5E%7B-x%7D%7D%7B1%2Be%5E%7B-x%7D%7D-%5Cfrac%7B1%7D%7B1%2Be%5E%7B-x%7D%7D%5Cright)%0A" alt="
+=\frac{1}{\left(1+e^{-x}\right)} \cdot \frac{e^{-x}+1-1}{\left(1+e^{-x}\right)}=\frac{1}{\left(1+e^{-x}\right)} \cdot\left(\frac{1+e^{-x}}{1+e^{-x}}-\frac{1}{1+e^{-x}}\right)
+" />
+
+Let’s cancel out the numerator and denominator
+
+<img src="https://tex.s2cms.ru/svg/%0A%3D%5Cfrac%7B1%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%20%5Ccdot%5Cleft(%5Cfrac%7B1%2Be%5E%7B-x%7D%7D%7B1%2Be%5E%7B-x%7D%7D-%5Cfrac%7B1%7D%7B1%2Be%5E%7B-x%7D%7D%5Cright)%3D%5Cfrac%7B1%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%7D%20%5Ccdot%5Cleft(1-%5Cfrac%7B1%7D%7B1%2Be%5E%7B-x%7D%7D%5Cright)%0A" alt="
+=\frac{1}{\left(1+e^{-x}\right)} \cdot\left(\frac{1+e^{-x}}{1+e^{-x}}-\frac{1}{1+e^{-x}}\right)=\frac{1}{\left(1+e^{-x}\right)} \cdot\left(1-\frac{1}{1+e^{-x}}\right)
+" />
+
+Now, if we take a look at the first equation of this article (1), then we can rewrite as follows
+
+<img src="https://tex.s2cms.ru/svg/%0A%3D%5Cfrac%7B1%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%5E%7B.%7D%7D%20%5Ccdot%5Cleft(1-%5Cfrac%7B1%7D%7B1%2Be%5E%7B-x%7D%7D%5Cright)%3D%5Csigma(x)%20%5Ccdot(1-%5Csigma(x))%0A" alt="
+=\frac{1}{\left(1+e^{-x}\right)^{.}} \cdot\left(1-\frac{1}{1+e^{-x}}\right)=\sigma(x) \cdot(1-\sigma(x))
+" />
 
 
 Definition from [Wikipedia](https://en.wikipedia.org/wiki/Markdown):
