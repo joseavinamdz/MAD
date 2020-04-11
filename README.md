@@ -124,7 +124,7 @@ which can be written as
 Right, we are complete with the derivative. 
 ***
 
-####Sigmoid function and Machine Learning
+#### Sigmoid function and Machine Learning
 Now, we still need to simplify it a bit to get to the form used in Machine Learning. 
 
 
