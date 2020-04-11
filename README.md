@@ -1,16 +1,128 @@
 # MAD
-Repo for Mobile Application Development
+Artificial Intellingence
 
-# Upmath: Math Online Editor
-### _Create web articles and&nbsp;blog posts with&nbsp;equations and&nbsp;diagrams_
+# Artificial Intelligence: Machine Learning
 
-Upmath extremely simplifies this task by using Markdown and LaTeX. It converts the Markdown syntax extended with LaTeX equations support into HTML code you can publish anywhere on the web.
+## _Logistic Regression_
 
 
+### Sigmoid Function 
+... Definition
 <p align="center"
 ><img src="sigmoid_function.png" />
 ![Paper written in LaTeX]
 </p>
+
+***
+
+
+#### Lower and Upper limits
+If we use the limits:
+
+$$
+\large{
+\begin{array}{l}\lim _{x \rightarrow \infty} \mathrm{e}^{-x} \rightarrow 0 \\ \\ \lim _{x \rightarrow-\infty} \mathrm{e}^{-x} \rightarrow \infty\end{array}}
+$$
+
+this leads to:
+
+$$
+\Large{
+\begin{array}{l}\lim _{x \rightarrow \infty} \frac{1}{1+e^{-x}}=\frac{1}{1+\lim _{x \rightarrow \infty} e^{-x}}=\frac{1}{1+0}=1 \\ \\
+\lim _{x \rightarrow-\infty} \frac{1}{1+e^{-x}}=\frac{1}{1+\lim _{x \rightarrow-\infty} e^{-x}}=\frac{1}{1+\lim _{x \rightarrow \infty} e^{x}}=0\end{array}}
+$$
+
+***
+
+#### Derivation of Sigmoid Function
+
+$$\Large{
+\begin{array}{l}
+\sigma(x)=\frac{1}{1+e^{-x}} \ \ \ \ \ \
+\end{array}}
+$$
+
+Right, let’s start deriving the sigmoid function.
+So, we want the value of:
+
+$$\Large{
+\begin{array}{l}
+\sigma^{\prime}(x)=\frac{d}{d x} \sigma(x)=\frac{d}{d x} \frac{1}{1+e^{-x}}
+\end{array}}
+$$
+
+Next, we will apply the reciprocal rule
+
+$$
+\Large{
+\left[\frac{1}{u(x)}\right]^{\prime}=\left[u(x)^{-1}\right]^{\prime}=-\left[\frac{u^{\prime}(x)}{u(x)^{2}}\right]=-u(x)^{-2} \cdot u^{\prime}(x)}
+$$
+
+Applying the reciprocal rule, takes us to the next step
+
+$$
+\Large{
+=\frac{d}{d x}\left(1+e^{-x}\right)^{-1}=-\left(1+e^{-x}\right)^{-2} \cdot \frac{d}{d x}\left(1+e^{-x}\right)}
+$$
+
+Next, we need to apply the rule of linearity, which simply says
+
+$$
+\Large{[a . u(x)+b . v(x)]^{\prime}=a \cdot u^{\prime}(x)+b . v^{\prime}(x)}
+$$
+
+Applying the rule of linearity, we get
+
+$$\Large{
+=-\left(1+e^{-x}\right)^{-2} \cdot \frac{d}{d x}\left(1+e^{-x}\right)=-\left(1+e^{-x}\right)^{-2} \cdot\left(\frac{d}{d x}[1]+\frac{d}{d x}\left[e^{-x}\right]\right)}
+$$
+
+$$\ldots$$ now let’s derive each of them one by one.
+Now, derivative of a constant is 0, so we can write the next step as
+
+$$\Large{
+=-\left(1+e^{-x}\right)^{-2} \cdot\left(\frac{d}{d x}[1]+\frac{d}{d x}\left[e^{-x}\right]\right)=-\left(1+e^{-x}\right)^{-2} \cdot\left(0+\frac{d}{d x}\left[e^{-x}\right]\right)}
+$$
+
+And adding 0 to something doesn’t effects so we will be removing the 0 in the next step and moving with the next derivation for which we will require the exponential rule, which simply says
+
+$$
+\Large{\left[e^{u(x)}\right]^{\prime}=e^{u(x)} \cdot u^{\prime}(x)}
+$$
+
+Applying the exponential rule we get,
+
+$$\Large{
+=-\left(1+e^{-x}\right)^{-2} \cdot\left(\frac{d}{d x}\left[e^{-x}\right]\right)=-\left(1+e^{-x}\right)^{-2} \cdot\left(e^{-x} \cdot \frac{d}{d x}[-x]\right)}
+$$
+
+Again, to better understand you can simply replace $$e^{u(x)}$$ in the exponential rule with $$ e^{(-x)} $$
+
+Next, by the rule of linearity we can write
+
+$$\Large{
+=-\left(1+e^{-x}\right)^{-2} \cdot\left(e^{-x} \cdot \frac{d}{d x}[-x]\right)=-\left(1+e^{-x}\right)^{-2} \cdot\left(e^{-x} \cdot-\frac{d}{d x}[x]\right)}
+$$
+
+Derivative of the differentiation variable is 1, applying which we get
+
+$$
+=-\left(1+e^{-x}\right)^{-2} \cdot\left(e^{-x} \cdot-\frac{d}{d x}[x]\right)=-\left(1+e^{-x}\right)^{-2} \cdot\left(e^{-x} \cdot-1\right)
+$$
+
+Now, we can simply open the second pair of parenthesis and applying the basic rule $$-1 * -1 = + \ 1$$ we get
+
+$$
+=-\left(1+e^{-x}\right)^{-2} \cdot\left(e^{-x} \cdot-1\right)=\left(1+e^{-x}\right)^{-2} \cdot e^{-x}
+$$
+
+which can be written as
+
+$$
+=\left(1+e^{-x}\right)^{-2} \cdot e^{-x}=\frac{e^{-x}}{\left(1+e^{-x}\right)^{2}}
+$$
+
+Right, we are complete with the derivative.
 
 
 
