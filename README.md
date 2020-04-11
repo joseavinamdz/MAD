@@ -10,12 +10,9 @@ Artificial Intellingence
 ... Definition
 
 
-![](https://ai-master.gitbooks.io/logistic-regression/sigmoid-function.html)
-*ai-master.gitbooks.io*
-
-<p align="center"
-><img src="sigmoid_function.png" />
-</p>
+![](sigmoid_function.png)
+|:--:| 
+| *ai-master.gitbooks.io* |
 
 ***
 
