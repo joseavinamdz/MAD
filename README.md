@@ -124,7 +124,7 @@ which can be written as
 Right, we are complete with the derivative. 
 ***
 
-#### Sigmoid function and Machine Learning
+#### Sigmoid function in Machine Learning
 Now, we still need to simplify it a bit to get to the form used in Machine Learning. 
 
 
@@ -164,7 +164,9 @@ Now, if we take a look at the first equation of this article (1), then we can re
 =\frac{1}{\left(1+e^{-x}\right)^{.}} \cdot\left(1-\frac{1}{1+e^{-x}}\right)=\sigma(x) \cdot(1-\sigma(x))
 " />
 
-towardsdatascience [Arunava](https://towardsdatascience.com/derivative-of-the-sigmoid-function-536880cf918e):
+ [towardsdatascience: Arunava](https://towardsdatascience.com/derivative-of-the-sigmoid-function-536880cf918e).
+
+***
 
 > Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 
