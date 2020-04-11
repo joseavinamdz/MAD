@@ -6,7 +6,10 @@ Repo for Mobile Application Development
 
 Upmath extremely simplifies this task by using Markdown and LaTeX. It converts the Markdown syntax extended with LaTeX equations support into HTML code you can publish anywhere on the web.
 
+
+<p align="center">
 ![Paper written in LaTeX](sigmoid_function.png)
+</p>
 
 ## Markdown
 
