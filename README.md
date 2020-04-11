@@ -8,9 +8,13 @@ Artificial Intellingence
 
 ### Sigmoid Function 
 ... Definition
+
+
+![](https://ai-master.gitbooks.io/logistic-regression/sigmoid-function.html)
+*ai-master.gitbooks.io*
+
 <p align="center"
 ><img src="sigmoid_function.png" />
-![Paper written in LaTeX]
 </p>
 
 ***
