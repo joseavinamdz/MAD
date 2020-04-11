@@ -9,11 +9,11 @@ Artificial Intellingence
 ### Sigmoid Function 
 ... Definition
 
-
+<p align=center>
 ![](sigmoid_function.png)
 |:--:| 
 | *ai-master.gitbooks.io* |
-
+</p>	
 ***
 
 #### Lower and Upper limits
