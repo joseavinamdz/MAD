@@ -124,6 +124,7 @@ which can be written as
 Right, we are complete with the derivative. 
 ***
 
+####Sigmoid function and Machine Learning
 Now, we still need to simplify it a bit to get to the form used in Machine Learning. 
 
 
@@ -162,7 +163,6 @@ Now, if we take a look at the first equation of this article (1), then we can re
 <img src="https://tex.s2cms.ru/svg/%0A%3D%5Cfrac%7B1%7D%7B%5Cleft(1%2Be%5E%7B-x%7D%5Cright)%5E%7B.%7D%7D%20%5Ccdot%5Cleft(1-%5Cfrac%7B1%7D%7B1%2Be%5E%7B-x%7D%7D%5Cright)%3D%5Csigma(x)%20%5Ccdot(1-%5Csigma(x))%0A" alt="
 =\frac{1}{\left(1+e^{-x}\right)^{.}} \cdot\left(1-\frac{1}{1+e^{-x}}\right)=\sigma(x) \cdot(1-\sigma(x))
 " />
-
 
 towardsdatascience [Arunava](https://towardsdatascience.com/derivative-of-the-sigmoid-function-536880cf918e):
 
