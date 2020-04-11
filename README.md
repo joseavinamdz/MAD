@@ -165,7 +165,7 @@ Now, if we take a look at the first equation of this article (1), then we can re
 " />
 
 
-Definition from [Wikipedia](https://en.wikipedia.org/wiki/Markdown):
+Derivative of the Sigmoid function [towardsdatascience](https://towardsdatascience.com/derivative-of-the-sigmoid-function-536880cf918e):
 
 > Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 
