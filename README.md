@@ -121,7 +121,11 @@ which can be written as
 =\left(1+e^{-x}\right)^{-2} \cdot e^{-x}=\frac{e^{-x}}{\left(1+e^{-x}\right)^{2}}
 " />
 
-Right, we are complete with the derivative. Now, we still need to simplify it a bit to get to the form used in Machine Learning. 
+Right, we are complete with the derivative. 
+
+***
+
+Now, we still need to simplify it a bit to get to the form used in Machine Learning. 
 
 
 First, let’s rewrite it as follows
