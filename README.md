@@ -1,2 +1,2 @@
 # MAD
-Artificial Intellingence
+Artificial Intelligence
